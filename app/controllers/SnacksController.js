@@ -1,5 +1,5 @@
 import { AppState } from "../AppState.js"
-import { examplesService } from "../services/ExampleService.js"
+import { snacksService } from "../services/SnacksServices.js"
 
 function _logExamples() {
   console.clear()
@@ -10,7 +10,7 @@ function _logExamples() {
 
 }
 
-export class ExamplesController {
+export class SnacksController {
   constructor() {
     console.log('The ExamplesController has loaded')
     AppState.on('examples', _logExamples)

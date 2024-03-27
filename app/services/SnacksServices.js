@@ -1,10 +1,10 @@
 import { AppState } from "../AppState.js";
-import { Example } from "../models/Example.js";
+import { Snacks } from "../models/Snacks.js";
 
-class ExamplesService {
+class SnacksService {
   addMessage(message) {
     AppState.examples.push(new Example(message))
   }
 }
 
-export const examplesService = new ExamplesService()
+export const snacksService = new SnacksService()

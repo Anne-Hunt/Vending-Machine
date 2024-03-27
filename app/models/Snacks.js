@@ -1,4 +1,4 @@
-export class Example {
+export class Snacks {
   constructor(message) {
     this.message = message
   }
