@@ -1,1 +1,11 @@
-/* BASIC STYLES HERE */
+body {
+    background-color: black;
+}
+
+.orange {
+    color: orange;
+}
+
+.yellow {
+    background-color: #d5d54a;
+}
