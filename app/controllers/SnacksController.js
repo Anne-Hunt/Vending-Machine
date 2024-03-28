@@ -31,6 +31,11 @@ export class SnacksController {
     setText('money', `${money.toFixed(2)}`)
   }
 
+  drawOutOfStock(snackId) {
+    let goneElem = document.getElementById(snackId)
+    goneElem.innerHTML = Snacks.SnacksGone
+  }
+
   addMoney() {
     console.log('adding money')
     snacksService.addMoney()
@@ -39,9 +44,15 @@ export class SnacksController {
 
   buySnack(snackId) {
     console.log('buying snacks')
-    snacksService.buySnack(snackId)
-    this.drawMoney()
-    this.drawSnacksContent()
+    let boughtSnack = AppState.snacks.find(snack => snack.id == snackId)
+    if (boughtSnack.qty <= 0) {
+      console.log('out of stock', snackId)
+      window.alert('Out of Stock!')
+      this.drawOutOfStock(snackId)
+    } else {
+      snacksService.buySnack(snackId)
+      this.drawMoney()
+      this.drawSnacksContent()
+    }
   }
-
 }

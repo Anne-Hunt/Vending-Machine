@@ -14,7 +14,7 @@ export class Snacks {
 
   get SnacksCard() {
     return `
-  <div class="col-3 d-flex justify-content-center">
+  <div id="${this.id}" class="col-3 d-flex justify-content-center">
     <div class="card text-center bg-dark">
       <img src="${this.imgURL}" alt="snacks" class="card-image snackimage py-1 mb-1 ">
       <span class="bg-white rounded shadow"><h5 class="m-0">${this.name}</h5>
@@ -31,14 +31,13 @@ export class Snacks {
 
   static get SnacksGone() {
     return `
-    <div class="col-3">
-  <div class="card text-center">
-    <img src="https://em-content.zobj.net/source/google/387/cross-mark_274c.png" alt="snacks" class="card-image snackimage">
-    <h4>Out of Stock</h4>
-    <p>contact vendor</p>
-    <p class="bcode">out of stock</p>
-  </div>
-</div>
+      <div class="card text-center bg-dark">
+        <img src="https://em-content.zobj.net/source/google/387/cross-mark_274c.png" alt="snacks" class="card-image snackimage py-1 mb-1 ">
+        <span class="bg-white rounded shadow"><h5 class="m-0">Out of Stock</h5>
+        <span class="stockgone">contact vendor</span>
+        <span class="stockgone">out of stock</span></span>
+      </div>
+
 `
   }
 }

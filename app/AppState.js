@@ -62,7 +62,7 @@ class ObservableAppState extends EventEmitter {
       price: 24.99,
       imgURL: "./assets/img/basket.png",
       id: 'B4',
-      qty: 4
+      qty: 1
     }),
     new Snacks({
       name: 'Boba',
