@@ -2,22 +2,24 @@ body {
     background-color: black;
 }
 
+h1,
+h2 {
+    font-family: "Rubik Mono One", sans-serif;
+}
+
 .orange {
-    color: rgb(193, 125, 0);
+    color: #c17d00;
 }
 
 .yellow {
     background-color: #d5d54a;
 }
 
-h1,
-h2 {
-    font-family: "Rubik Mono One", sans-serif;
-}
-
 .snackimage {
-    width: 160px;
     height: 160px;
+    width: 160px;
+    /*max-width: 160px;
+    max-height: 160px;*/
     object-fit: scale-down;
 }
 
@@ -34,4 +36,8 @@ h2 {
 
 .stockgone {
     font-size: x-small;
+}
+
+.machineshadow {
+    box-shadow: 1px -1px #c17d00, 2px -2px #c17d00, 3px -3px #c17d00, 4px -4px #c17d00, 5px -5px #c17d00, 6px -6px #c17d00, 7px -7px #c17d00, 8px -8px #c17d00;
 }
