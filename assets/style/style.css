@@ -3,13 +3,31 @@ body {
 }
 
 .orange {
-    color: orange;
+    color: rgb(193, 125, 0);
 }
 
 .yellow {
     background-color: #d5d54a;
 }
 
-.bcode {
-    font-family: "Libre Barcode 39", sans-serif;
+h1,
+h2 {
+    font-family: "Rubik Mono One", sans-serif;
+}
+
+.snackimage {
+    width: 160px;
+    height: 160px;
+    object-fit: scale-down;
+}
+
+.snackbutton {
+    width: 43px;
+    height: 43px;
+}
+
+.moneybutton {
+    width: 43px;
+    height: 43px;
+    font-size: x-small;
 }
